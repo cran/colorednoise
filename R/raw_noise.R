@@ -1,34 +1,9 @@
-#' Generate Autocorrelated Noise
-#'
-#' This function generates temporally autocorrelated random numbers with a mean,
-#' standard deviation, and autocorrelation you specify.
-#' @param timesteps The number of temporally autocorrelated random numbers (one
-#'   per timestep) you want.
-#' @param mu The mean of the temporally autocorrelated random numbers.
-#' @param sigma The standard deviation of the temporally autocorrelated random
-#'   numbers.
-#' @param phi The temporal autocorrelation. 0 is white noise (uncorrelated),
-#'   positive values are red noise (directly correlated) and negative values are blue
-#'   noise (inversely correlated).
-#' @return A vector of temporally autocorrelated random numbers.
-#' @examples
-#' rednoise <- raw_noise(timesteps = 30, mu = 0.5, sigma = 0.2, phi = 0.3)
-#' rednoise
-#' @export
-raw_noise <- function(timesteps, mu, sigma, phi) {
-    delta <- mu * (1 - phi)
-    variance <- sigma^2 * (1 - phi^2)
-    noise <- vector(mode = "double", length = timesteps)
-    noise[1] <- c(rnorm(1, mu, sigma))
-    for (i in (1:(timesteps - 1))) {
-        noise[i + 1] <- delta + phi * noise[i] + rnorm(1, 0, sqrt(variance))
-    }
-    return(noise)
-}
 #' Estimate Mean, SD, and Autocorrelation of Sample Noise.
 #'
 #' This function estimates the temporal autocorrelation of a vector of random
-#' numburs, as well as the sample mean and standard deviation. Try feeding it the output of \code{\link{raw_noise}}.
+#' numbers, as well as the sample mean and standard deviation. Try feeding it the output of \code{\link{raw_noise}}.
+#' @useDynLib colorednoise
+#' @importFrom Rcpp sourceCpp
 #' @param noise The vector of random numbers.
 #' @return A labeled vector with the sample mean, sample SD, and sample
 #'   autocorrelation.
