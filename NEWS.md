@@ -1,3 +1,12 @@
+## colorednoise 1.0.3
+
+* `matrix_model` now has more options for dealing with survival values erroneously set to >1.
+
+## colorednoise 1.0.2
+
+* The Makevars have been tweaked so the package runs on more operating systems and compilers.
+* `colorednoise` no longer depends on the deprecated package `purrrlyr`.
+
 ## colorednoise 1.0.0
 
 * `colorednoise` can now execute matrix population models with the `matrix_model` function, along with its helper functions `colored_multi_rnorm`, `multi_rnorm`, and `cor2cov`.

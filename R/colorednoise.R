@@ -2,9 +2,7 @@
 #'
 #' Simulate Temporally Autocorrelated Populations
 #'
-#' See the README on
-#' \href{https://cran.r-project.org/package=colorednoise/README.html}{CRAN}
-#' or \href{https://github.com/japilo/colorednoise#readme}{GitHub}
+#' See the README on \href{https://github.com/japilo/colorednoise#readme}{GitHub}
 #'
 #' @docType package
 #' @name colorednoise
@@ -12,7 +10,7 @@
 #' @import purrr
 #' @import dplyr
 #' @importFrom stats sd acf na.omit plogis
-#' @importFrom purrrlyr by_row
+#' @import tidyr
 NULL
 
 ## quiets concerns of R CMD check re: the .'s that appear in
