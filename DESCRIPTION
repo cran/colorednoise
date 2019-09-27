@@ -1,8 +1,8 @@
 Package: colorednoise
 Type: Package
 Title: Simulate Temporally Autocorrelated Populations
-Version: 1.0.4
-Date: 2019-01-23
+Version: 1.0.5
+Date: 2019-09-26
 Authors@R: c(
     person("Julia", "Pilowsky", email = "jap2178@caa.columbia.edu", 
     role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6376-2585")
@@ -13,7 +13,7 @@ Description: Temporally autocorrelated populations are correlated in their vital
 License: GPL-3
 Depends: R (>= 3.3.0)
 Imports: stats (>= 3.3.2), dplyr (>= 0.7.3), purrr (>= 0.2.3), tibble
-        (>= 2.0.0), tidyr (>= 0.8.0)
+        (>= 2.0.0), tidyr (>= 1.0.0)
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.1.1
 Encoding: UTF-8
@@ -23,7 +23,7 @@ Suggests: ggplot2 (>= 2.2.1), knitr (>= 1.17), rmarkdown (>= 1.6),
         testthat (>= 1.0.2), covr (>= 3.0.0), pkgdown (>= 1.1.0)
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2019-01-23 11:36:27 UTC; Julia
+Packaged: 2019-09-27 11:34:01 UTC; Julia
 Author: Julia Pilowsky [aut, cre] (<https://orcid.org/0000-0002-6376-2585>)
 Repository: CRAN
-Date/Publication: 2019-01-23 12:50:14 UTC
+Date/Publication: 2019-09-27 13:10:02 UTC
