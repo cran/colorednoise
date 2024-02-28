@@ -1,8 +1,8 @@
 Package: colorednoise
 Type: Package
 Title: Simulate Temporally Autocorrelated Populations
-Version: 1.1.1
-Date: 2023-08-23
+Version: 1.1.2
+Date: 2024-02-23
 Authors@R: c(
     person("July", "Pilowsky", email = "pilowskyj@caryinstitute.org", 
     role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6376-2585")
@@ -16,14 +16,14 @@ Depends: R (>= 3.3.0)
 Imports: stats (>= 3.3.2), purrr (>= 0.2.3), Rcpp (>= 1.0.5),
         data.table (>= 1.12.8)
 LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Encoding: UTF-8
 BugReports: https://github.com/japilo/colorednoise/issues
 Suggests: ggplot2 (>= 2.2.1), knitr (>= 1.17), rmarkdown (>= 1.6),
         testthat (>= 1.0.2), covr (>= 3.0.0), pkgdown (>= 1.1.0)
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2023-09-22 15:01:09 UTC; caryinstitute
+Packaged: 2024-02-28 17:51:41 UTC; japil
 Author: July Pilowsky [aut, cre] (<https://orcid.org/0000-0002-6376-2585>)
 Repository: CRAN
-Date/Publication: 2023-09-22 16:40:02 UTC
+Date/Publication: 2024-02-28 21:50:02 UTC
